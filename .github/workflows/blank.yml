@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install Vagrant
-        run: sudo apt-get install vagrant
+        run: sudo apt-get install vagrant -y
 
       # Runs a single command using the runners shell
       - name: Vagrant Version
@@ -35,8 +35,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Install VirtualBox
-        run: sudo apt-get install virtualbox-qt
+        run: sudo apt-get install virtualbox -y
 
       # Runs a set of commands using the runners shell
-      - name: VirtualBox Version
-        run: virtualbox --version
+      - name: VBoxManage Version
+        run: vboxmanage --version
