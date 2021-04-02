@@ -24,14 +24,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Vagrant Version
         run: vagrant --version
-        shell: pwsh
 
       # Runs a single command using the runners shell
       - name: Vagrant Version
         run: cd C:\Users\Administrator\Desktop\
-        shell: pwsh
         
       # Runs a single command using the runners shell
       - name: Vagrant Version
         run: vagrant status
-        shell: pwsh
