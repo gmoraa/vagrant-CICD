@@ -44,7 +44,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: VBoxManage Export
-        run: & 'C:\Program Files\Oracle\VirtualBox\VBoxManage.exe' export ggcore -o ggcore.ova
+        run: "&amp;" 'C:\Program Files\Oracle\VirtualBox\VBoxManage.exe' export ggcore -o ggcore.ova
         continue-on-error: true
 
       # Runs a single command using the runners shell
