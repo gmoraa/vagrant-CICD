@@ -24,11 +24,19 @@ jobs:
       # Runs a single command using the runners shell
       - name: Vagrant Version
         run: vagrant --version
-
-      # Runs a single command using the runners shell
-      - name: Vagrant Version
-        run: cd C:\Users\Administrator\Desktop\
         
       # Runs a single command using the runners shell
-      - name: Vagrant Version
+      - name: Vagrant Up
+        run: vagrant up
+
+      # Runs a single command using the runners shell
+      - name: Vagrant Status
         run: vagrant status
+
+      # Runs a single command using the runners shell
+      - name: Vagrant Package
+        run: vagrant package --vagrantfile ./Vagrantfile --output test.box
+
+      # Runs a single command using the runners shell
+      - name: List files
+        run: dir
