@@ -45,10 +45,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: VBoxManage Export
         run: |
-          $MYVM=& 'C:\Program Files\Oracle\VirtualBox\VBoxManage.exe' list vms
-          $MYVMNAME=echo $MYVM.Substring(0+1,$MYVM-2)
-          echo $MYVMNAME
-          & 'C:\Program Files\Oracle\VirtualBox\VBoxManage.exe' export $MYVMNAME -o ggcore.ova
+          $VMS=& 'C:\Program Files\Oracle\VirtualBox\VBoxManage.exe' list vms
+          $HELPER=$VMS.IndexOf(" ")
+          $VMNAME=echo $MYVM.Substring(0+1,$HELPER-2)
+          & 'C:\Program Files\Oracle\VirtualBox\VBoxManage.exe' export $VMNAME -o ggcore.ova
         continue-on-error: true
 
       # Runs a single command using the runners shell
