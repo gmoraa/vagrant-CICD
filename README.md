@@ -15,4 +15,4 @@ Requirements:
 
 Voilá, your pipeline is ready to use!
 
-Note: During my experiment I realized Windows it's actually better than Linuxto handle nested virtualization and that's the reason behind using a Windows server in AWS.
+Note: During my experiment I realized Windows it's actually better than Linux to handle nested virtualization and that's the reason behind using a Windows server in AWS.
